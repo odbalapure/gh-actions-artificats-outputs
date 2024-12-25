@@ -29,10 +29,10 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: |
-            dist
-            package.json
-        
+          name: dist
+          # name: |
+          #   dist
+          #   package.json
   deploy:
     needs: build
     runs-on: ubuntu-latest
